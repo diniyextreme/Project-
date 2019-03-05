@@ -1,0 +1,11 @@
+var iScrollPos = 0;
+
+$(window).scroll(function () {
+    var iCurScrollPos = $(this).scrollTop();
+    if (iCurScrollPos > iScrollPos) {
+        alert('down');
+    } else {
+        alert('up');
+    }
+    iScrollPos = iCurScrollPos;
+});

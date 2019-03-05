@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Learn about IP and Subnet</title>
+  <link rel="icon" href="logo.png">
+
+  <!-- CSS Styles -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html"><img src="logo.png" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Learn about IP and Subnet</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="top-content">
+    <h2 id="content-1">What's an IP address?</h2>
+    <img class="content-img" width="450px" height="230px " src="ip-image.png" alt="ip-image">
+    <ul class="unordered-list">
+      <li>An IP address is a number that represents a device like a network card uniquely on the Internet or on your company's intranet. This number is actually a binary one, but for convenience it's normally written as four decimal numbers.
+        For
+        instance, a typical IP address would be something like 192.168.1.1. The four constituent numbers together represent the network that the computer is on and the computer (interface) itself.</li><br>
+      <li>The IP addresses for networks on the Internet are allocated by the InterNIC. If you have an Internet connection (a registered domain and a permanent link to the Internet, and not just a dial-up connection), then you would be
+        allocated a network address by the agency that registered you, like the InterNIC. Let us assume this to be 192.6.132.0, a class C network. Then all the machines on this network would have the same network address. And the last 0 will
+        be replaced by a number from 1 to 254 for the node address. So, nodes will have addresses 192.6.132.1, 192.6.132.2, and so on up to 192.6.132.254.It would be worth mentioning here that IP address calculations and concepts make sense
+        only when done in binary.</li>
+    </ul>
+    <br>
+    <h2 id="content-2">Types of networks and corresponding IP addresses</h2><br>
+    <p>Depending on the size of the network, IP-based networks are divided into three classes :</p>
+    <img class="content-img" width="400px" height="230px" src="ip-class.jpg" alt="ip-class">
+    <ul class="unordered-list">
+      <li><strong>Class A</strong> networks are mega monster networks with up to 224 nodes 16 million plus. Class A networks have their network addresses from 1.0.0.0 to 126.0.0.0, with the zero's being replaced by node addresses.</li>
+      <li><strong>Class B</strong> networks are smaller networks in comparison they can have only about 65,000 nodes! Network addresses for these ranges from 128.0.0.0 to 191.0.0.0. Here the last two zeros get replaced by the node addresses.</li>
+      <li><strong>Class C</strong> These are the baby networks that can have only 254 nodes at the maximum. The network IP addresses for these range from 192.0.0.0 to 223.0.0.0. </li>
+    </ul>
+    <br>
+    <h2 id="content-3">Introducing subnet masks</h2><br>
+    <img class="content-img" width="500px" height="230px" src="subnet-mask.jpg" alt="">
+    <p>In an IP network, every machine on the same physical network sees all the data packets sent out on the network. As the number of computers on a network grows, network traffic will grow many fold, bringing down performance drastically.
+      In such a situation, you would divide your network into different subnetworks and minimize the traffic across the different subnetworks. Interconnectivity between the different subnets would be provided by routers, which will only
+      transmit data meant for another subnet across itself. To divide a given network address into two or more subnets, you use subnet masks. The default subnet masks for class A networks is 255.0.0.0, for class B is 255.255.0.0, and for class
+      C is 255.255.255.0, which signify a network without subnets.</p>
+  </div>
+  
+  <div class="bottom-content">
+    <h2 id="content-4">Which class of network? Which IP address?</h2><br>
+    <p>The InterNIC has (RFC 1597 Address Allocation for Private Internets) allocated particular blocks of network addresses for use in intranets. These IP addresses don't conflict with those of existing Internet hosts and will not be handed
+      out for use on the Internet.</p>
+    <p class="ordered-list-small">The address blocks are:</p>
+    <ol class="ordered-list-small">
+      <li><strong>Class A</strong> - 10.0.0.0</li>
+      <li><strong>Class B</strong> - From 172.16.0.0 to 172.31.0.0</li>
+      <li><strong>Class C</strong> - From 192.168.0.0 to 192.168.255.0</li>
+    </ol><br>
+    <p>Computers on networks using the above IP addresses will be treated as private ones and they can communicate only within the company intranet. However, they can still access the outside world using proxy servers. This adds to the
+      security of your intranet. So, your intranet should always use addresses from these reserved groups only.</p><br>
+    <p>Now, which IP address class should you use for your intranet?The answer depends on the number of hosts that are going to be connected to the intranet. Any machine connected to the network, whether server or client, is called a host.</p>
+    <p>Without subneting, you can have the following configurations :</p><br>
+    <table cellspacing="5" border="2" class="table-class">
+      <thead>
+        <tr>
+          <th>No Of Machines To Be Connected</th>
+          <th>Class Of Network </th>
+          <th>Network Addresses</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>65,535 to 16,777,214</td>
+          <td>A</td>
+          <td>10.0.0.0</td>
+        </tr>
+        <tr>
+          <td>255 to 65,534</td>
+          <td>B</td>
+          <td>172.16.0.0 to 172.31.0.0</td>
+        </tr>
+        <tr>
+          <td>254 or less</td>
+          <td>C</td>
+          <td>10.0.0.0</td>
+        </tr>
+      </tbody>
+      <tfoot>
+
+      </tfoot>
+    </table><br>
+    <p>Thus, if you are having a class C network that is not permanently connected to the Internet, your network address can be any one from 192.168.1.0 to 192.168.255.0, and without subneting, you can have 254 hosts having addresses
+      192.168.1.1 to 192.168.1.254, if you have selected 192.168.1.0 as your network address; 192.168.1.255 is the broadcast address and 192.168.1.0 is the network address for this network.</p>
+    <br>
+
+    <h2 id="content-5">Dynamic IP Addressing vs Static IP Addressing</h2><br>
+    <p>In assigning IP addresses to machines, you have two choices. You can either go around typing in the individual address on each machine or you can setup one machine to assign IP addresses to the others. The second one called dynamic
+      addressing is preferred for three reasons. First, it makes the job of administering the network such as adding new clients, avoiding IP clashes, etc a lot easier. And second, since only those machines that are switched on will need an IP
+      address, you could potentially have more machines on your network with dynamic addressing, than you could with static addressing. Finally, mobile computing has become an everyday reality, and notebook computers have a likelihood of
+      moving from one network to another or from one subnet to another. In such a situation, if you have static IP addressing, you have to reconfigure the machine every time you move it something that is eminently avoidable.
+      You do dynamic addressing with DHCP (Dynamic Host Configuration Protocol). To make DHCP work on your network you have to set up a DHCP server.
+
+      Calculation of IP addresses and subnet masks is no job for the binary challenged. A handy tool which will do all this for you is the IP Subnet calculator, a freeware tool from the Net3 Group. It is available on the PCQ July 97 CD-ROM.</p><br>
+
+    <h2 id="content-6">An example in Subnet design </h2><br>
+    <p>We will consider a class C network being subneted.
+      First of all you have to decide how many subnets you want to have. This can be along functional lines like different subnets for accounts, sales, and marketing etc. You also need to know the number of hosts that the largest subnet is to
+      support. And remember to keep future needs in mind.</p><br>
+    <p>Assume that the network address chosen for your intranet is 192.168.1.0, and that you want seven subnets, with the largest one having 20 hosts.Since you are dealing with binary numbers, subnets can be created only in blocks of powers of
+      two. That is you can have two subnets, four, eight, 16, and so on. In this case you choose eight subnets, which will also give you one free subnet for future use. Your IP address is a 32-bit binary number. Out of this the first 24 bits
+      (8 x 3) have already gone for the network address. Now you have to set aside the next three (8 = 23 ) for subneting. That leaves you with 32-24-3 = 5 bits for host addresses. With five bits you can have 25 = 32 individual IP addresses
+      for the hosts. Of these, two all 1s and all 0s cannot be assigned to hosts. The all 0s host number identifies the base network or the subnet while the all 1s host number identifies the broadcast address of the network or subnetwork. So,
+      you can have a maximum of 30 hosts on each subnet.<br>
+      <p>If you want more than 30 hosts on a subnet, what would you do? Reduce the number of subnets or go for a higher class of network. Remember that the maximum number of hosts on a class C network is 254 (after subtracting the broadcast
+        address and the network address), and with every subnet, you are reducing that number by two. (8 x 30) + (7x2) = 240 + 14 = 254.</p><br>
+      <p class="unordered-list">Now we come to the binary numbers :</p>
+      <ul class="unordered-list">
+        <li><strong>Network address = 192.168.1.0 = 11000000.10101000.00000001.00000000</strong></li>
+        <li><strong>Default subnet for class C = 255.255.255.0 = 11111111.11111111.11111111.00000000</strong></li>
+        <li><strong>Adding 8 subnets = 11111111.11111111.11111111.11100000</strong></li>
+      </ul><br>
+      <p>Converting this to binary, the required subnet mask is 255.255.255.224 (11100000 in binary is 224 in decimal notation).
+        The subnets are numbered 0 to 7. The subnet is defined by replacing the three most significant digits ( first three from left) of the last octet in the network address with the binary representation of the subnet number. Thus,</p><br>
+      <ol class="ordered-list">
+        <li><strong>Subnet 0 will be 11000000.10101000.00000001.00000000 = 192.168.1.0</strong></li>
+        <li><strong>Subnet 1 will be 11000000.10101000.00000001.00100000 = 192.168.1.32</strong></li>
+        <li><strong>Subnet 2 will be 11000000.10101000.00000001.01000000 = 192.168.1.64</strong></li>
+        <li><strong>Subnet 3 will be 11000000.10101000.00000001.01100000 = 192.168.1.96</strong></li>
+        <li><strong>Subnet 4 will be 11000000.10101000.00000001.10000000 = 192.168.1.128</strong></li>
+        <li><strong>Subnet 5 will be 11000000.10101000.00000001.10100000 = 192.168.1.160</strong></li>
+        <li><strong>Subnet 6 will be 11000000.10101000.00000001.11000000 = 192.168.1.192</strong></li>
+        <li><strong>Subnet 7 will be 11000000.10101000.00000001.11100000 = 192.168.1.224</strong></li>
+      </ol><br>
+      <p>A quick check on your calculations is that the fourth octet (in decimal) of all subnets will be multiples of the fourth octet (in decimal) of subnet 1.As originally defined, subnets with all 0s and all 1s subnets 0 and 7 in this case
+        were not to be used. But today's routers can overcome this limitation.</p><br>
+      <p>Now we come to the host address for each of the subnets. Hosts are numbered from 1 onwards as against subnets which as we saw are numbered from 0 onwards. In this case, we have 30 hosts in each subnet, and they will be numbered from 1
+        to 30. To arrive at the host IP address, replace the host portion of the relevant subnet address (the last five digits of the fourth octet in this case) with the binary equivalent of the host number.Thus, the IP address of host number
+        3 on subnet 1 will be 11000000.10101000.00000001.00000011 = 192.168.1.3 and that for host number 30 in subnet 6 will be 11000000.10101000.00000001.11011110 =192.168.1.222.The broadcast address for subnet 4 is
+        11000000.10101000.00000001.10011111 = 192.168.1.159, which is one less than the subnet address of subnet 5.</p><br>
+  </div>
+
+  <div class="copyright">
+    <p class="copyright-text">Inteksoft © 2019</p>
+  </div>
+
+</body>
+
+</html>

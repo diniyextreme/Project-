@@ -1,0 +1,91 @@
+// Activates the Carousel
+$('.carousel').carousel({
+    interval: 5000
+})
+
+// Activates Tooltips for Social Links
+$('.tooltip-social').tooltip({
+    selector: "a[data-toggle=tooltip]"
+})
+
+jQuery(document).ready(function () {
+    CreateMegaMenu();
+
+ if (window.location.href.indexOf("/en")>-1) {
+if(document.title == 'default') {
+	     document.title = 'Ministry of Transport Malaysia';
+ }
+ }
+  
+  if (window.location.href.indexOf("/my")>-1) {
+	  if(document.title == 'default') {
+        document.title = 'Kementerian Pengangkutan Malaysia';
+	  }
+  }
+
+    if (window.location.href.indexOf("mot-dev") < 0) {
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-63443353-1', 'auto');
+        ga('send', 'pageview');
+    }
+    //end redirect - done by mani
+});
+
+
+
+
+function CreateMegaMenu() {
+    //get the drop down content defined
+    if ($('#dropdownContent > .dropdown-menu').length > 0) {
+
+        var topNavMenu = $("[id$='_TopNavigationMenu']");
+        var rootAspMenu = $("[id$='_RootAspMenu']");
+
+        //apply bootstrap class to SharePoint navigation
+        $(topNavMenu).addClass('navbar-collapse collapse');
+        $(rootAspMenu).addClass('nav navbar-nav navbar-left');
+
+        //get all the rendered SharePoint Nodes
+        var navigationNodes = $(rootAspMenu).children();
+
+        var dropDownContents = $('#dropdownContent > .dropdown-menu');
+
+        //add the drop down content to the nodes as well as the css class required
+        for (var i = 0; i < dropDownContents.length; i++) {
+
+            var currentDropDown = dropDownContents[i];
+            var currentNode = navigationNodes[i];
+
+            $(currentNode).addClass('dropdown');
+            $($(currentNode).children()[0]).attr("data-toggle", "dropdown");
+            $($(currentNode).children()[0]).addClass('dropdown-toggle disabled');
+
+            $(currentNode).children().after(currentDropDown);
+
+            $(currentDropDown).hide();
+        }
+
+        //create ul element to hold the right most navigation node
+        $(topNavMenu).append('<ul id="rightNode" class="nav navbar-nav navbar-right"></ul>');
+
+        //append the last node into the ul 
+        $('#rightNode').append($(navigationNodes[navigationNodes.length - 1]))
+    }
+
+    //remove the container for the dropdown contents
+    $('#dropdownContent').remove();
+
+    $(".dropdown").hover(
+        function () {
+            $('.dropdown-menu', this).fadeIn("fast");
+        },
+        function () {
+            $('.dropdown-menu', this).fadeOut("fast");
+        });
+}

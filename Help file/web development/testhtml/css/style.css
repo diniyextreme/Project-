@@ -1,0 +1,23 @@
+body{
+  margin:0 0 0 0;
+}
+.meow{
+display: inline-block;
+width: 100%;
+}
+.nav{
+  position: relative;
+  float: right;
+}
+.image{
+  margin: 0 0 0 0;
+  top:-25px;
+  z-index: -1;
+  width: 100%;
+  position: relative;
+}
+
+.image1{
+  height: 650px;
+  width: 100%;
+}

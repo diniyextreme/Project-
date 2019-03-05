@@ -1,0 +1,175 @@
+.container-fluid{
+  padding: 0 0 0 0;
+}
+.navbar1 {
+  height: 100px;
+  width: 100%;
+}
+.navbar1_main {
+  background-color: #ffffff;
+  height: 72%;
+}
+.navbar1_main > ul > li{
+padding: 15px 15px 15px 15px;
+color:#004d40;
+width: 90px;
+}
+.navbar1_secondary >ul> li{
+width: 90px;
+}
+
+li{
+
+}
+ul > li{
+font-size: 1.2em;
+text-align: center;
+font-family: Roboto !important;
+font-weight: 700;
+text-decoration: none;
+font-style: normal;
+display: inline-block;
+}
+.left > li{
+margin:0 7% 0 0%;
+}
+.left{
+width:500px;
+display: inline;
+}
+.right{
+  width:500px;
+  display: inline;
+  margin-left:20%;
+}
+.right > li{
+margin:0 7% 0 0%;}
+
+.navbar_logo1{
+  position: absolute;
+  left: 40%;
+  top:20px;
+  background-color: white;
+  padding: 1px 30px 3px 30px;
+  border-radius: 5px;
+  box-shadow: inset 0px 0px 10px blue;
+
+}
+.tat{
+  font-family: Roboto !important;
+font-weight: 700;
+text-decoration: none;
+font-style: normal;
+display: inline-block;
+}
+
+.navbar1_secondary {
+  background: url(background: url(../images/banner01.png) repeat-x;
+  background-image: url(../images/banner01.png);
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-repeat-x: repeat;
+  background-repeat-y: no-repeat;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+  ) repeat-x;
+  color: WHITE;
+}
+.navbar1_secondary > .left >li{
+  padding: 0 15px 0 15px;
+}
+
+.carousel1 {
+  background-color: #ffffff;
+  height: 400px;
+}
+.banner1{
+  height: 400px;
+  width: 100%;
+}
+
+.content1 {s
+  height: 820px;
+}
+.left_wrapper1{
+  background-color: white;
+  width: 24%;
+  display: inline-block;
+  background: url(background: url(../images/banner01.png) repeat-x;
+  background-image: url(../images/banner01.png);
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-repeat-x: repeat;
+  background-repeat-y: repeat;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+  ) repeat-y;
+}
+.path_content1{
+  height:600px;
+  list-style-position:inside;
+  border: 0px solid white;
+}
+.brand{
+  background-color: #3687C3;
+  color: white;
+  text-align: center;
+  list-style-position:inside;
+  border: 1px solid black;
+}
+.side-nav >ul{
+  padding-left: 0;
+}
+.side-nav >ul >li{
+  text-align:center;
+  color: black;
+  display: block;
+}
+.contact1{
+text-align: center;
+}
+.content_inside1 {
+  background-color: white;
+  width: 75%;
+  display: inline-block;
+}
+.title >h1{
+  text-align: center;
+}
+.title >p{
+  text-align: center;
+}
+.col-lg-4.col-md-6.col-sm-12{
+  text-align: center;
+}
+.footer1 {
+  background: url(background: url(../images/banner01.png) repeat-x;
+  background-image: url(../images/banner01.png);
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-repeat-x: repeat;
+  background-repeat-y: no-repeat;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+  ) repeat-x;
+  text-align:right;
+
+}
+
+/** utility **/
+.left{
+margin: 0 7% 0 7%;
+}
+.icon_pad{
+  display: inline-block;
+  padding-right: 15px;
+}

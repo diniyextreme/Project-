@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inteksoft</title>
+
+  <!-- CSS Styles -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style\default.css">
+  <link rel="icon" href="images\logo.png">
+
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyAGbXfUWg8vHoh68NtJZ5QlI-M3Sb4K6e0"></script>
+</head>
+
+<body>
+
+  <section id="header">
+
+    <div class="container-fluid pad0">
+
+      <nav class="navbar navbar-expand-lg navbar-light pad0">
+        <a class="navbar-brand" href="index.html"><img src="images\logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto nav-js">
+            <li class="nav-item">
+              <a class="nav-link " href="index.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="solution.html">Solutions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profile.html">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+  </section>
+
+  <section class="map_content">
+    <div class="row no-gutters">
+      <div class="col-lg-12 mr-none ">
+        <div id="gmap_canvas"></div>
+      </div>
+      </div>
+      <div class="row small_row">
+      <div class="col-lg-4 offset-lg-8 col-sm-12 contact_text ">
+        <table class="contact-info-table">
+          <thead>
+            <p class="contact-head">Inteksoft Sdn. Bhd. <span class="small">(718578-A)</span></p>
+            </p>
+          </thead>
+          <tbody class="contact-body">
+            <tr>
+              <td valign="top">
+                <p class="contact-title"><strong>Telephone</strong></p>
+              </td>
+              <td valign="top">
+                <p>+603 8071 6884 / 1300 88 2014</p>
+              </td>
+            </tr>
+            <tr>
+              <td valign="top">
+                <p class="contact-title"><strong>Fax</strong></p>
+              </td>
+              <td valign="top">
+                <p>+603 8076 4241</p>
+              </td>
+            </tr>
+            <tr>
+              <td valign="top">
+                <p class="contact-title"><strong>Email</strong></p>
+              </td>
+              <td valign="top">
+                <a class="contact_link" href="mailto:inquiry@inteksoft.com.my">inquiry@inteksoft.com.my</a>
+              </td>
+            </tr>
+            <tr>
+              <td valign="top">
+                <p class="contact-title"><strong>Helpdesk</strong></p>
+              </td>
+              <td valign="top">
+                <a class="contact_link" href="mailto:helpdesk@inteksoft.com.my">helpdesk@inteksoft.com.my</a>
+              </td>
+            </tr>
+            <tr>
+              <td valign="top">
+                <p class="contact-title"><strong>Address</strong></p>
+              </td>
+              <td valign="top">
+                <p>Lot 3F-25, Pusat Perdagangan IOI, Persiaran Puchong Jaya Selatan, Bandar Puchong Jaya, Batu 8, 47100 Puchong, Selangor, Malaysia</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+    </div>
+
+  </section>
+
+  <section id="footer" class="footer_contact contact_footer">
+    <div class="row">
+      <div class="col-lg-12 col-sm-12">
+        <div class="copyright-text">Inteksoft © 2019</div>
+      </div>
+    </div>
+  </section>
+
+  </div>
+  <script type="text/javascript">
+    function init_map() {
+      var mapCenter = new google.maps.LatLng(3.042233, 101.624000);
+      var myOptions = {
+        scrollwheel: false,
+        zoom: 14,
+        center: mapCenter,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        styles: [{
+          "featureType": "water",
+          "stylers": [{
+            "color": "#46bcec"
+          }, {
+            "visibility": "on"
+          }]
+        }, {
+          "featureType": "landscape",
+          "stylers": [{
+            "color": "#f2f2f2"
+          }]
+        }, {
+          "featureType": "road",
+          "stylers": [{
+            "saturation": -100
+          }, {
+            "lightness": 45
+          }]
+        }, {
+          "featureType": "road.highway",
+          "stylers": [{
+            "visibility": "simplified"
+          }]
+        }, {
+          "featureType": "road.arterial",
+          "elementType": "labels.icon",
+          "stylers": [{
+            "visibility": "off"
+          }]
+        }, {
+          "featureType": "administrative",
+          "elementType": "labels.text.fill",
+          "stylers": [{
+            "color": "#444444"
+          }]
+        }, {
+          "featureType": "transit",
+          "stylers": [{
+            "visibility": "off"
+          }]
+        }, {
+          "featureType": "poi",
+          "stylers": [{
+            "visibility": "off"
+          }]
+        }]
+      };
+
+      map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
+      marker = new google.maps.Marker({
+        map: map,
+        position: new google.maps.LatLng(3.042233, 101.619189)
+      });
+    }
+
+    $(document).ready(function() {
+      $(".contact").css({
+        "right": $(window).width() > 1024 ? "10%" : "20px",
+        "top": ($(window).height() - 300) / 2
+      });
+      $("#gmap_canvas").height($(window).height() - 140);
+      init_map();
+    });
+
+    $(window).resize(function() {
+      $(".contact").css({
+        "right": $(window).width() > 1024 ? "10%" : "20px",
+        "top": ($(window).height() - 300) / 2
+      });
+      $("#gmap_canvas").height($(window).height() - 140);
+      init_map();
+    });
+  </script>
+  <script type="text/javascript" src="js/js.js"></script>
+</body>
+
+</html>

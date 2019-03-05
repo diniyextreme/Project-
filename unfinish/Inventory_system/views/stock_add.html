@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <link href="../public/css.css" type="text/css" rel="stylesheet">
+    </script>
+
+
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <section id="navigation">
+      <div class="Top">
+      <div class="Logo">
+        <p>Stock IN and OUT</p>
+      </div>
+      <div class="Right_area">
+      <div class="logo_name">
+        <p>stock In and Out</p>
+      </div>
+      <div class="user">
+        <p>yadayada,logout</p>
+      </div>
+      </div>
+      </div>
+      <div class="navigation_menu">
+      <ul>
+        <li>Dashboard</li>
+        <li>Stock Items</li>
+      </ul>
+      </div>
+    </section>
+    <section id="content">
+      <div class="container-fluid">
+        <div class="row ">
+          <div class="breadcrumb1 col-3 col-offset-right-9">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Library</li>
+            </ol>
+          </div>
+          <body class="bg-light">
+   <div class="container">
+
+ <div class="row">
+   <div class="col-md-12 order-md-2">
+     <h4 class="mb-3">Stock Add</h4>
+     <form class="needs-validation" action="/add" method="POST" >
+       <div class="row no-gutters">
+         <div class="col-md-12 mb-3">
+           <label for="firstName">item name</label>
+           <input type="text" class="form-control" id="item_name" placeholder="" value="" required>
+           <div class="invalid-feedback">
+            item name is required
+           </div>
+         </div>
+       </div>
+
+       <div class="mb-3">
+         <label for="Supplier">Supplier</label>
+         <div class="input-group">
+           <input type="text" class="form-control" id="Supplier" placeholder="Username" required>
+           <div class="invalid-feedback" style="width: 100%;">
+             Supplier name is required.
+           </div>
+         </div>
+       </div>
+       <div class="mb-3">
+         <label for="category">category</label>
+         <div class="input-group">
+           <input type="text" class="form-control" id="category" placeholder="category" required>
+           <div class="invalid-feedback" style="width: 100%;">
+             The category is required.
+           </div>
+         </div>
+       </div>
+       <div class="mb-3">
+         <label for="notes">notes</label>
+         <div class="input-group">
+           <input type="text" class="form-control" id="notes" placeholder="notes" required>
+           <div class="invalid-feedback" style="width: 100%;">
+             Your notes is required.
+           </div>
+         </div>
+       </div>
+       <div class="mb-3">
+         <label for="Quantity">Quantity</label>
+         <div class="input-group">
+           <input type="text" class="form-control" id="Quantity" placeholder="Quantity" required>
+           <div class="invalid-feedback" style="width: 100%;">
+             The Quantity is required.
+           </div>
+         </div>
+       </div>
+       <div class="mb-3">
+         <label for="Purchase_price">Purchase_price</label>
+         <div class="input-group">
+           <input type="text" class="form-control" id="Purchase_price" placeholder="Purchase_price" required>
+           <div class="invalid-feedback" style="width: 100%;">
+             Your Purchase_price is required.
+           </div>
+         </div>
+       </div>
+       <div class="mb-3">
+         <label for="Selling_price">Selling_price</label>
+         <div class="input-group">
+           <input type="text" class="form-control" id="Selling_price" placeholder="Selling_price" required>
+           <div class="invalid-feedback" style="width: 100%;">
+             The Selling_price is required.
+           </div>
+         </div>
+       </div>
+
+
+       <hr class="mb-4">
+       <button class="btn btn-primary btn-lg btn-block" type="submit">submit</button>
+     </form>
+   </div>
+ </div>
+
+ <footer class="my-5 pt-5 text-muted text-center text-small">
+   <p class="mb-1">&copy; 2017-2019 Company Name</p>
+   <ul class="list-inline">
+     <li class="list-inline-item"><a href="#">Privacy</a></li>
+     <li class="list-inline-item"><a href="#">Terms</a></li>
+     <li class="list-inline-item"><a href="#">Support</a></li>
+   </ul>
+ </footer>
+</div>
+
+        </div>
+      </div>
+
+    </section>
+  </body>
+</html>

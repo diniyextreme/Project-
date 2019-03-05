@@ -1,0 +1,75 @@
+/*
+Testing purpose
+*/
+.red {
+  width: 100px;
+  height: 500px;
+  background-color: red;
+}
+
+.blue {
+  width: 100px;
+  height: 500px;
+  background-color: blue;
+}
+
+.yellow {
+  width: 120px;
+  height: 500px;
+  background-color: yellow;
+}
+
+/*end testing*/
+.image {
+  height: 400px;
+  width: 100%;
+}
+
+.mr-none {
+  margin: 0 0 0 0;
+}
+
+.pad0 {
+  padding: 0 0 0 0;
+}
+
+.content {}
+
+.word {
+  position: absolute;
+  color: white;
+  display: block;
+}
+
+.title {
+  margin-right: 20px;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+  margin: 50px 0px 20px 0px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.content p {
+  margin-right: 20px;
+  font-size: 16px;
+  line-height: 20px;
+  text-shadow: 2px 1px 1px #000;
+}
+
+.yu {
+  position: absolute;
+  color: white;
+  top: -400px;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+  margin: 50px 0px 20px 0px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.yu p {
+  font-size: 16px;
+  line-height: 20px;
+  text-shadow: 2px 1px 1px #000;
+}

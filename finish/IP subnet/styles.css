@@ -1,0 +1,177 @@
+/* HTML1 */
+.navbar-brand { padding-left: 150px; padding-right: 680px; }
+.nav-item {  }
+
+.simple-description { text-align: center; margin: 85px 250px; /*padding-bottom: 16%;*/
+}
+
+
+.copyright {  background-color: #f3f3f3; color: #777; padding: 15px; }
+.copyright-text { font-size: 12px; text-align: right; padding-top: 1%; }
+
+
+/* HTML2 */
+.top-content { margin: 50px 230px; padding-bottom: 3%;; text-align: center; }
+.content-img { margin: 2% 0; }
+.bottom-content { margin: 50px 230px; padding-bottom: 3%;; text-align: center; }
+.ordered-list { text-align: left; }
+.ordered-list-small { text-align: left; }
+.unordered-list { text-align: left; }
+.table-class { margin-left: 18.5%; }
+
+.calculator{
+  background-color: #C0C0C0;
+  height:500px;
+  margin:0 10px 0 10px;
+  width: 100%;
+}
+.hidden{
+  display: none;
+}
+
+@media only screen and (max-width: 1320px) {
+.table-class { margin-left: 17%; }
+}
+
+@media only screen and (max-width: 1285px) {
+.table-class { margin-left: 14%; }
+}
+
+@media only screen and (max-width: 1285px) {
+.table-class { margin-left: 12%; }
+}
+
+@media only screen and (max-width: 1197px) {
+.navbar-brand { padding-left: 100px; padding-right: 600px; }
+}
+
+@media only screen and (max-width: 1150px) {
+.table-class { margin-left: 10%; }
+}
+
+@media only screen and (max-width: 1120px) {
+.table-class { margin-left: 8%; }
+}
+
+@media only screen and (max-width: 1090px) {
+.table-class { margin-left: 6%; }
+}
+
+@media only screen and (max-width: 1072px) {
+.navbar-brand { padding-left: 100px; padding-right: 530px; }
+
+}
+
+@media only screen and (max-width: 1042px) {
+.navbar-brand { padding-left: 100px; padding-right: 500px; }
+.top-content { margin: 85px 200px; padding-bottom: 1%;; text-align: center; }
+.content-img { margin: 2% 0; width: auto; }
+.bottom-content { margin: 85px 200px; padding-bottom: 1%;; text-align: center; }
+
+}
+
+@media only screen and (max-width: 1020px) {
+.navbar-brand { padding-left: 100px; padding-right: 490px; }
+.top-content { margin: 85px 185px; padding-bottom: 1%;; text-align: center; }
+.bottom-content { margin: 85px 185px; padding-bottom: 1%;; text-align: center; }
+}
+
+@media only screen and (max-width: 1002px) {
+.navbar-brand { padding-left: 70px; padding-right: 490px; }
+
+}
+
+@media only screen and (max-width: 992px) {
+.navbar-brand { padding-left: 70px; padding-right: 460px; }
+
+}
+
+@media only screen and (max-width: 991px) {
+.navbar-brand { padding-left: 30px; padding-right: 460px; }
+.table-class { margin-left: 4%; }
+}
+
+@media only screen and (max-width: 925px) {
+  .top-content { margin: 85px 165px; padding-bottom: 1%;; text-align: center; }
+  .bottom-content { margin: 85px 165px; padding-bottom: 1%;; text-align: center; }
+}
+
+@media only screen and (max-width: 880px) {
+  .top-content { margin: 85px 145px; padding-bottom: 1%;; text-align: center; }
+  .bottom-content { margin: 85px 145px; padding-bottom: 1%;; text-align: center; }
+  .table-class { margin-left: 2.5%; }
+}
+
+@media only screen and (max-width: 890px) {
+.simple-description { text-align: center; margin: 85px 150px; padding-bottom: 16%; }
+}
+
+@media only screen and (max-width: 830px) {
+  .table-class { margin-left: 1%; }
+}
+
+@media only screen and (max-width: 810px) {
+  .top-content { margin: 85px 120px; padding-bottom: 1%;; text-align: center; }
+  .bottom-content { margin: 85px 120px; padding-bottom: 1%;; text-align: center; }
+}
+
+@media only screen and (max-width: 744px) {
+.content-img { margin: 2% 0; width: 400px;  }
+}
+
+@media only screen and (max-width: 725px) {
+  .top-content { margin: 85px 100px; padding-bottom: 1%;; text-align: center; }
+  .bottom-content { margin: 85px 100px; padding-bottom: 1%;; text-align: center; }
+}
+
+@media only screen and (max-width: 710px) {
+.navbar-brand { padding-left: 30px; padding-right: 300px; }
+
+}
+
+@media only screen and (max-width: 656px) {
+.content-img { margin: 2% 0; width: 320px;  }
+.top-content { margin: 85px 80px; padding-bottom: 1%;; text-align: center; }
+.bottom-content { margin: 85px 80px; padding-bottom: 1%;; text-align: center; }
+}
+
+@media only screen and (max-width: 569px) {
+.content-img { margin: 2% 0; width: 300px;  }
+}
+
+@media only screen and (max-width: 543px) {
+.navbar-brand { padding-left: 30px; padding-right: 150px; }
+.content-img { margin: 2% 0; width: 280px;  }
+.ordered-list { text-align: left; width: 180px; }
+.ordered-list-small { text-align: left; width: 300px; }
+.unordered-list { text-align: left; width: 300px; }
+}
+
+@media only screen and (max-width: 525px) {
+.content-img { margin: 2% 0; width: 255px;  }
+}
+
+@media only screen and (max-width: 510px) {
+.simple-description { text-align: center; margin: 85px 100px; padding-bottom: 16%; }
+.content-img { margin: 2% 0; width: 240px;  }
+.top-content { margin: 85px 50px; padding-bottom: 1%;; text-align: center; font-size: 14px; }
+.bottom-content { margin: 85px 50px; padding-bottom: 1%;; text-align: center; font-size: 14px; }
+.ordered-list { text-align: left; width: 250px; font-size: 14px; }
+.ordered-list-small { text-align: left; width: 300px; font-size: 14px;}
+.unordered-list { text-align: left; width: 250px; font-size: 14px;}
+}
+
+@media only screen and (max-width: 485px) {
+.content-img { margin: 2% 0; width: 220px;  }
+}
+
+@media only screen and (max-width: 375px) {
+.navbar-brand { padding-left: 15px; padding-right: 120px; }
+.simple-description { text-align: center; margin: 85px 65px; padding-bottom: 16%; }
+
+}
+
+@media only screen and (max-width: 320px) {
+.navbar-brand { padding-left: 10px; padding-right: 100px; }
+.simple-description { text-align: center; margin: 85px 55px; padding-bottom: 16%; }
+}

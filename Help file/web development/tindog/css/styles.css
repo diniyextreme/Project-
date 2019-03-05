@@ -1,0 +1,83 @@
+#title{
+  background-color: #ff4c68;
+  position: relative;
+  height: 600px;
+}
+.container-fluid{
+  padding: 3% 10%;
+}
+h1{
+  font-family:"montserrat-black";
+  font-size: 3rem;
+  line-height: 1.5;
+  color: white;
+}
+h2{
+  font-family:"montserrat-bold";
+  font-size: 3rem;
+  line-height: 1.5;
+}
+h3{
+  font-family:montserrat;
+  font-size: 1.5rem;
+}
+.phone_pic img{
+  position: relative;
+  height: 80%;
+  transform: rotate(20deg);
+  z-index: 0;
+}
+/* Feature */
+#features p{
+  color: #818181;
+}
+#features{
+  background-color: white;
+  position: relative;
+  padding: 7% 15%;
+  z-index: 1;
+}
+.features-box{
+  text-align: center;
+}
+.icon{
+  margin-bottom: 1rem;
+}
+.icon:hover{
+  color: pink;
+}
+/* Testimony */
+
+#testimonials{
+  text-align: center;
+  background-color: #ef8172;
+  color: white;
+}
+.carousel-item{
+  padding: 7% 20%;
+}
+.testimonial-image{
+width: 10%;
+border-radius: 100%;
+margin: 20px;
+}
+#press{
+  background-color: #ef8172;
+  text-align: center;
+  padding-bottom: 3%;
+}
+.press_logo{
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/* Pricing */
+
+#pricing{
+  padding: 100px;
+  text-align: center;
+
+}
+.pricing-column{
+  padding: 3% 2%;
+}

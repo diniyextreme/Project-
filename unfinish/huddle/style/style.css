@@ -1,0 +1,23 @@
+/* <style>
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
+</style> */
+
+body{
+  background-color: #F6F9FE;
+  height: 768px;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+.background_deco{
+  height: 75%;
+  width: 900px;
+  background-color: red;
+  border-radius: 124px;
+  position: absolute;
+  top:-83px;
+  right: -200px;
+  -ms-transform: rotate(40deg); /* IE 9 */
+  -webkit-transform: rotate(40deg); /* Safari */
+  transform: rotate(40deg);
+}

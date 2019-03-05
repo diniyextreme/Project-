@@ -1,0 +1,36 @@
+html{
+  height: 100%;
+}
+body{
+  background-color: #f185b3;
+  height: 100%;
+  }
+.banner{
+  position: relative;
+  width: 100%;
+  height: 20%;
+  background-color: white;
+}
+.banner img{
+  border:solid 5px;
+  border-color: lightblue;
+  position: absolute;
+  height: 100%;
+  left:10%;
+}
+.container-fluid{
+  padding: 10% 10%;
+}
+
+.navbar{
+  margin-top: 0.5%;
+}
+.navbark-dark .navbar-nav .navbar-link{
+  color: white;
+}
+.carousel_mot{
+  padding: 10px;
+}
+.padding_left10{
+  padding: 0 10% 0 10%;
+}

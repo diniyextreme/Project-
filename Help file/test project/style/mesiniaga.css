@@ -1,0 +1,101 @@
+body{
+  height:650px;
+  width:1340px;
+}
+.top{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 22px;
+    background-color: #ffffff;
+}
+.bottom{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background-color: #ffffff;
+}
+.left{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 100%;
+  background-color: #ffffff;
+}
+.right{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 100%;
+  background-color: #ffffff;
+}
+.content{
+  width:100%;
+  height:100%;
+}
+.page{
+  height:608px;
+  width:1300px;
+position:absolute;
+top:3%;
+left:3%;
+
+}
+.hidden{
+  display: none;
+}
+img{
+  height:100%;
+  width:1300px;
+}
+
+.active{
+  z-index: 2;
+}
+.animation_down{
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 4s;
+}
+.animation_up{
+  -webkit-animation-name: example1; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: example1;
+  animation-duration: 4s;
+}
+@keyframes example {
+  0%   {}
+  100% {top:-768px}
+}
+@keyframes example1 {
+  0%   {}
+  100% {top:768px}
+}
+.icon_top{
+  position:fixed;
+  top:0px;
+  right: 20px;
+  z-index:3;
+}
+.item-img:hover{
+  background-color: white;
+}
+.list_icon{
+display: inline-block;
+}
+.v1{
+  height: 57px;
+  width: 57px;
+}
+.icon_right{
+  position: fixed;
+  top:100px;
+  right: 20px;
+  z-index: 3;
+}

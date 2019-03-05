@@ -1,0 +1,35 @@
+ .my-nav {
+   background-color: rgba(255, 255, 255, 0.1) !important;
+   z-index: 1;
+ }
+
+ .position_absolute {
+   position: absolute;
+   width: 100%;
+ }
+
+ .z_index_1 {
+   z-index: 1;
+ }
+
+ .z_index_minus1 {
+   z-index: -1;
+ }
+
+ .z_index_2 {
+   z-index: 2;
+ }
+
+ .logo_x {
+   z-index: 2;
+   left: 43%;
+ }
+.pic_in_circle{
+
+}
+.circle {
+   width: 100px;
+   height: 75px;
+   background-color: rgba(255, 255, 255, 0.5) !important;
+   border-radius: 50%
+ }

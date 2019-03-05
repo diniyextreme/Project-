@@ -1,0 +1,204 @@
+
+          <div class="input-group mb-3 col-6 pl-0">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01">Network Class</label>
+            </div>
+            <select class="custom-select test NC" id="Network Class">
+              <option selected>Choose...</option>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+            </select>
+          </div>
+          <div class="input-group mb-3 col-6 pl-0">
+            <div class="input-group-prepend size_right">
+              <span class="input-group-text" id="inputGroup-sizing-default">First-octet range</span>
+            </div>
+            <input type="text" class="form-control" id="view_first_octet" disabled aria-label="Default" aria-describedby="inputGroup-sizing-default">
+          </div>
+          <div class="input-group mb-3 col-6 pl-0">
+            <div class="input-group-prepend size_right">
+              <span class="input-group-text" id="inputGroup-sizing-default">Ip Address</span>
+            </div>
+            <input type="text" id="Ip_Address" class="" onchange="gyu(1);">
+          </div>
+          <div class="input-group mb-3 col-6 pl-0">
+            <div class="input-group-prepend size_right ">
+              <span class="input-group-text" id="inputGroup-sizing-default">Hex Ip address</span>
+            </div>
+            <input type="text" class="form-control" id="Hex_ip_address" disabled aria-label="Default" aria-describedby="inputGroup-sizing-default">
+          </div>
+          <div class="input-group mb-3 col-6 pl-0">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01">Subnet Mask</label>
+            </div>
+            <select class="custom-select subnet_mask" id="subnet_mask" onchange="gyu(2);">
+              <option class="hidden">255.0.0.0</option>
+              <option class="hidden">255.128.0.0</option>
+              <option class="hidden">255.192.0.0</option>
+              <option class="hidden">255.224.0.0</option>
+              <option class="hidden">255.240.0.0</option>
+              <option class="hidden">255.248.0.0</option>
+              <option class="hidden">255.252.0.0</option>
+              <option class="hidden">255.254.0.0</option>
+              <option class="hidden">255.255.0.0</option>
+              <option class="hidden">255.255.128.0</option>
+              <option class="hidden">255.255.192.0</option>
+              <option class="hidden">255.255.224.0</option>
+              <option class="hidden">255.255.240.0</option>
+              <option class="hidden">255.255.248.0</option>
+              <option class="hidden">255.255.252.0</option>
+              <option class="hidden">255.255.254.0</option>
+              <option class="hidden">255.255.255.0</option>
+              <option class="hidden">255.255.255.128</option>
+              <option class="hidden">255.255.255.192</option>
+              <option class="hidden">255.255.255.224</option>
+              <option class="hidden">255.255.255.240</option>
+              <option class="hidden">255.255.255.248</option>
+              <option class="hidden">255.255.255.252</option>
+            </select>
+          </div>
+          <div class="input-group mb-3 col-6 pl-0">
+            <div class="input-group-prepend size_right ">
+              <span class="input-group-text" id="inputGroup-sizing-default">Wild Card Mask</span>
+            </div>
+            <input type="text" class="form-control" id="wild_card_value" disabled>
+          </div>
+          <div class="input-group mb-3 col-6 pl-0">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01">subnet_bit</label>
+            </div>
+            <select class="custom-select subnet_bits" id="subnet_bits" onchange="gyu(3);">
+              <option class="hidden">0</option>
+              <option class="hidden">1</option>
+              <option class="hidden">2</option>
+              <option class="hidden">3</option>
+              <option class="hidden">4</option>
+              <option class="hidden">5</option>
+              <option class="hidden">6</option>
+              <option class="hidden">7</option>
+              <option class="hidden">8</option>
+              <option class="hidden">9</option>
+              <option class="hidden">10</option>
+              <option class="hidden">11</option>
+              <option class="hidden">12</option>
+              <option class="hidden">13</option>
+              <option class="hidden">14</option>
+              <option class="hidden">15</option>
+              <option class="hidden">16</option>
+              <option class="hidden">17</option>
+              <option class="hidden">18</option>
+              <option class="hidden">19</option>
+              <option class="hidden">20</option>
+              <option class="hidden">21</option>
+              <option class="hidden">22</option>
+            </select>
+          </div>
+          <div class="input-group mb-3 col-6 pl-0">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01">Mask Bit</label>
+            </div>
+            <select class="custom-select mask_bits" id="mask_bits" onchange="gyu(4);">
+              <option class="hidden">8</option>
+              <option class="hidden">9</option>
+              <option class="hidden">10</option>
+              <option class="hidden">11</option>
+              <option class="hidden">12</option>
+              <option class="hidden">13</option>
+              <option class="hidden">14</option>
+              <option class="hidden">15</option>
+              <option class="hidden">16</option>
+              <option class="hidden">17</option>
+              <option class="hidden">18</option>
+              <option class="hidden">19</option>
+              <option class="hidden">20</option>
+              <option class="hidden">21</option>
+              <option class="hidden">22</option>
+              <option class="hidden">23</option>
+              <option class="hidden">24</option>
+              <option class="hidden">25</option>
+              <option class="hidden">26</option>
+              <option class="hidden">27</option>
+              <option class="hidden">28</option>
+              <option class="hidden">29</option>
+              <option class="hidden">30</option>
+            </select>
+          </div>
+          <div class="input-group mb-3 col-6 pl-0">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01">max_subnet</label>
+            </div>
+            <select class="custom-select max_subnets" id="max_subnets" onchange="gyu(5);">
+              <option class="hidden">1</option>
+              <option class="hidden">2</option>
+              <option class="hidden">4</option>
+              <option class="hidden">8</option>
+              <option class="hidden">16</option>
+              <option class="hidden">32</option>
+              <option class="hidden">64</option>
+              <option class="hidden">128</option>
+              <option class="hidden">256</option>
+              <option class="hidden">512</option>
+              <option class="hidden">1024</option>
+              <option class="hidden">2048</option>
+              <option class="hidden">4096</option>
+              <option class="hidden">8192</option>
+              <option class="hidden">16384</option>
+              <option class="hidden">32768</option>
+              <option class="hidden">65536</option>
+              <option class="hidden">131072</option>
+              <option class="hidden">262144</option>
+              <option class="hidden">524288</option>
+              <option class="hidden">1048576</option>
+              <option class="hidden">2097152</option>
+              <option class="hidden">4194304</option>
+            </select>
+          </div>
+          <div class="input-group mb-3 col-6 pl-0">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01">max_subnet</label>
+            </div>
+            <select class="custom-select max_subnets" id="max_subnets" onchange="gyu(6);">
+              <option class="hidden">16777214</option>
+              <option class="hidden">8388606</option>
+              <option class="hidden">4194302</option>
+              <option class="hidden">2097150</option>
+              <option class="hidden">1048574</option>
+              <option class="hidden">524286</option>
+              <option class="hidden">262142</option>
+              <option class="hidden">131070</option>
+              <option class="hidden">65534</option>
+              <option class="hidden">32766</option>
+              <option class="hidden">16382</option>
+              <option class="hidden">8190</option>
+              <option class="hidden">4094</option>
+              <option class="hidden">2046</option>
+              <option class="hidden">1022</option>
+              <option class="hidden">510</option>
+              <option class="hidden">254</option>
+              <option class="hidden">126</option>
+              <option class="hidden">62</option>
+              <option class="hidden">30</option>
+              <option class="hidden">14</option>
+              <option class="hidden">6</option>
+              <option class="hidden">2</option>
+            </select>
+          </div>
+          <div class="input-group mb-3 col-12 pl-0">
+            <div class="input-group-prepend size_right ">
+              <span class="input-group-text" id="inputGroup-sizing-default">Host address range</span>
+            </div>
+            <input type="text" class="form-control" id="host_range" disabled>
+          </div>
+          <div class="input-group mb-3 col-6 pl-0">
+            <div class="input-group-prepend size_right ">
+              <span class="input-group-text" id="inputGroup-sizing-default">Subnet ID</span>
+            </div>
+            <input type="text" class="form-control" id="subnet_id" disabled>
+          </div>
+          <div class="input-group mb-3 col-6 pl-0">
+            <div class="input-group-prepend size_right ">
+              <span class="input-group-text" id="inputGroup-sizing-default">Broadcast Address</span>
+            </div>
+            <input type="text" class="form-control" id="broadcast" disabled>
+          </div>

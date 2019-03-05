@@ -1,0 +1,26 @@
+function init_map() {
+    var mapCenter = new google.maps.LatLng(3.042233, 101.624000);
+    var myOptions = {
+        scrollwheel: false,
+        zoom: 14,
+        center: mapCenter,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        styles: [{ "featureType": "water", "stylers": [{ "color": "#46bcec" }, { "visibility": "on" }] }, { "featureType": "landscape", "stylers": [{ "color": "#f2f2f2" }] }, { "featureType": "road", "stylers": [{ "saturation": -100 }, { "lightness": 45 }] }, { "featureType": "road.highway", "stylers": [{ "visibility": "simplified" }] }, { "featureType": "road.arterial", "elementType": "labels.icon", "stylers": [{ "visibility": "off" }] }, { "featureType": "administrative", "elementType": "labels.text.fill", "stylers": [{ "color": "#444444" }] }, { "featureType": "transit", "stylers": [{ "visibility": "off" }] }, { "featureType": "poi", "stylers": [{ "visibility": "off" }] }]
+    };
+
+    map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
+    marker = new google.maps.Marker({
+        map: map, position: new google.maps.LatLng(3.042233, 101.619189)
+    });
+}
+$(document).ready(function () {
+    $(".contact").css({ "right": $(window).width() > 1024 ? "10%" : "20px", "top" : ($(window).height() - 300) / 2 });
+    $("#gmap_canvas").height($(window).height() - 155);
+    init_map();
+});
+
+$(window).resize(function () {
+    $(".contact").css({ "right": $(window).width() > 1024 ? "10%" : "20px", "top": ($(window).height() - 300) / 2 });
+    $("#gmap_canvas").height($(window).height() - 155);
+    init_map();
+});
