@@ -5,19 +5,61 @@
 
 body{
   background-color: #F6F9FE;
-  height: 768px;
   max-width: 100%;
   overflow-x: hidden;
+
+}
+.container-fluid{
+  height: 2304px;
 }
 .background_deco{
   height: 75%;
   width: 900px;
-  background-color: red;
+  background-color: rgb(238,82,212);
   border-radius: 124px;
   position: absolute;
-  top:-83px;
+  top:-150px;
   right: -200px;
   -ms-transform: rotate(40deg); /* IE 9 */
   -webkit-transform: rotate(40deg); /* Safari */
   transform: rotate(40deg);
+  z-index: -1;
+}
+.background_deco1{
+  height: 75%;
+  width: 1000px;
+  background-color: #ffffff;
+  border-radius: 124px;
+  position: absolute;
+  top:200px;
+  right: 300px;
+  -ms-transform: rotate(-30deg); /* IE 9 */
+  -webkit-transform: rotate(-30deg); /* Safari */
+  transform: rotate(-30deg);
+  z-index: -2;
+}
+.top{
+  margin: 2% 2% 0 2%;
+height:50%;
+}
+.mockups{
+height: 90%;
+width: 80%;
+}
+.user{
+height: 100%;
+width: 80%;
+}
+.middle{
+  margin: 2% 2% 0 2%;
+height: 33%;
+}
+.bottom{
+  height: 33%;
+  background-color:yellow;
+}
+
+/* utility */
+.text-last{
+      text-align-last: center!important;
 }
